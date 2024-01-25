@@ -1,98 +1,124 @@
-/* Reset and Basic Styles */
 body {
     font-family: "Kanit", sans-serif;
     font-weight: 800;
     font-style: normal;
     margin: 0;
     padding: 0;
-    
     background-size: cover;
     background-repeat: no-repeat;
-    margin: 0;
-    background-size: cover; 
     background: rgb(7,0,133);
     background: radial-gradient(circle, rgba(7,0,133,1) 15%, rgba(124,124,124,1) 49%, rgba(0,212,255,1) 100%);
+    background-image: radial-gradient(circle, #a18cd1 20%, #fbc2eb 100%);
+    color: red; /* Default text color */
 }
-
-nav {
-    background-color: rgb(255, 182, 193); /* Whiteish pink background color */
-    color: black; /* Black font color */
-    padding: 0.5em; /* Adjust padding for better alignment */
-    border: 2px solid black; /* Black border for the nav bar */
-    display: flex;
-    justify-content: center;
-    align-items: center; /* Center vertically */
-}
-
-nav ul {
-    list-style: none;
+.nav {
     display: flex;
     justify-content: space-around;
-    padding: 0;
-    width: 100%; /* Make the ul take the full width of the nav */
-}
-.kanit-semibold {
-    font-family: "Kanit", sans-serif;
-    font-weight: 600;
-    font-style: normal;
-  }
-  
-  .kanit-semibold-italic {
-    font-family: "Kanit", sans-serif;
-    font-weight: 600;
-    font-style: italic;
-  }
-  
-  .kanit-bold {
-    font-family: "Kanit", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-  }
-  
-  .kanit-bold-italic {
-    font-family: "Kanit", sans-serif;
-    font-weight: 700;
-    font-style: italic;
-  }
-  
-  .kanit-extrabold {
-    font-family: "Kanit", sans-serif;
-    font-weight: 800;
-    font-style: normal;
-  }
-  
-  .kanit-extrabold-italic {
-    font-family: "Kanit", sans-serif;
-    font-weight: 800;
-    font-style: italic;
-  }
-  
-  .kanit-black {
-    font-family: "Kanit", sans-serif;
-    font-weight: 900;
-    font-style: normal;
-  }
-  
-  .kanit-black-italic {
-    font-family: "Kanit", sans-serif;
-    font-weight: 900;
-    font-style: italic;
-  }
-  
-nav a {
-    text-decoration: none;
-    color: black; /* Black font color */
-    font-weight: bold;
-    transition: background-color 0.3s, opacity 0.3s, border 0.3s; /* Add border transition */
-    border: 1px solid transparent; /* Initial border styling */
+    align-items: center;
+    background-color: #007bff;
+    padding: 10px 0;
 }
 
-/* Style for normal state */
-nav a:hover {
-    background-color: transparent;
-    opacity: 0.55;
-    border: 1px solid black; /* Black border on hover */
+.nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
 }
+
+.nav ul li {
+    margin-right: 20px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.tab-content {
+    background-color: white;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.tab-pane {
+    display: none;
+}
+
+.tab-pane.active {
+    display: block;
+}
+
+.footer {
+    background-color: #343a40;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+#social-links a {
+    color: white;
+    margin: 0 10px;
+    font-size: 24px;
+}
+
+.oswald {
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+/* Add keyframes for the rainbow text effect */
+@keyframes rainbow {
+    0% {
+        color: violet;
+    }
+
+    16.66% {
+        color: indigo;
+    }
+
+    33.33% {
+        color: blue;
+    }
+
+    50% {
+        color: green;
+    }
+
+    66.66% {
+        color: yellow;
+    }
+
+    83.33% {
+        color: orange;
+    }
+
+    100% {
+        color: red;
+    }
+}
+
+/* Apply the rainbow effect to the entire page */
+body {
+    animation: rainbow 8s linear infinite;
+}
+
+/* The rest of your existing styles... */
+.tab-content .tab-pane {
+    display: none;
+}
+
+.tab-content .tab-pane.active {
+    display: block;
+}
+
 /* Header Container Styles */
 .header {
     display: flex;
@@ -143,7 +169,9 @@ nav a:hover {
 }
 
 /* Rectangular Box Styles */
-.agenda, .description, .event {
+.agenda,
+.description,
+.event {
     background-color: rgb(227, 193, 255);
     padding: 20px;
     margin: 20px;
@@ -153,6 +181,7 @@ nav a:hover {
     margin-bottom: 20px;
     color: #4a4a4a;
 }
+
 .tab-content .tab-pane {
     display: none;
 }
@@ -160,19 +189,24 @@ nav a:hover {
 .tab-content .tab-pane.active {
     display: block;
 }
-.agenda h2, .description h2, .event h2 {
+
+.agenda h2,
+.description h2,
+.event h2 {
     text-align: center;
     font-size: 2em;
     margin-bottom: 20px;
 }
 
-.agenda ul, .event ul {
+.agenda ul,
+.event ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
 }
 
-.agenda li, .event li {
+.agenda li,
+.event li {
     margin-bottom: 10px;
     line-height: 1.6em;
 }
@@ -183,12 +217,12 @@ nav a:hover {
     padding: 15px;
     margin: 10px;
     border-radius: 10px;
-    overflow: hidden; /* Hide the overflow content, ensuring only the image is affected by the hover effect */
+    overflow: hidden;
 }
 
 /* Hover Effect Styles for Profile Image */
 .profile-box img {
-    transition: transform 0.3s; /* Apply transition to the image */
+    transition: transform 0.3s;
     border-radius: 50%;
     max-width: 200px;
     max-height: 200px;
@@ -197,10 +231,8 @@ nav a:hover {
 
 /* Hover Effect Styles for Profile Image on Hover */
 .profile-box:hover img {
-    transform: scale(1.1); /* Enlarge the image on hover */
+    transform: scale(1.1);
 }
-
-
 
 /* Grid Container Styles */
 .grid-container {
@@ -223,10 +255,65 @@ nav a:hover {
     color: black;
     cursor: pointer;
     border-radius: 60%;
-    transition: transform 0.3s; /* Add transition for smooth effect */
+    transition: transform 0.3s;
 }
 
 .register-button:hover {
-    color: black; /* Set the text color to black on hover */
-    transform: scale(1.1) translateX(-50%); /* Enlarge the button on hover */
+    color: black;
+    transform: scale(1.1) translateX(-50%);
+}
+
+.kanit-semibold {
+    font-family: "Kanit", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.kanit-semibold-italic {
+    font-family: "Kanit", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.kanit-bold {
+    font-family: "Kanit", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.kanit-bold-italic {
+    font-family: "Kanit", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.kanit-extrabold {
+    font-family: "Kanit", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+}
+
+.kanit-extrabold-italic {
+    font-family: "Kanit", sans-serif;
+    font-weight: 800;
+    font-style: italic;
+}
+
+.kanit-black {
+    font-family: "Kanit", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.kanit-black-italic {
+    font-family: "Kanit", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+}
+.tab-content .tab-pane {
+    display: none;
+}
+
+.tab-content .tab-pane.active {
+    display: block;
 }
