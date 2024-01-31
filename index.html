@@ -10,87 +10,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@700&display=swap" rel="stylesheet">
-    <style>
-        .oswald {
-            font-family: "Oswald", sans-serif;
-            font-optical-sizing: auto;
-            font-weight: 700;
-            font-style: normal;
-        }
-
-        body {
-            font-family: 'Kanit', sans-serif;
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            background-color: #f8f9fa;
-        }
-
-        
-
-        .nav {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            background-color: #007bff;
-            padding: 10px 0;
-        }
-
-        .nav ul {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
-        }
-
-        .nav ul li {
-            margin-right: 20px;
-        }
-
-        .nav a {
-            text-decoration: none;
-            color: white;
-            font-weight: bold;
-            font-size: 18px;
-        }
-
-        .tab-content {
-            background-color: white;
-            padding: 20px;
-            margin: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-
-        .tab-pane {
-            display: none;
-        }
-
-        .tab-pane.active {
-            display: block;
-        }
-
-        
-
-        .footer {
-            background-color: #343a40;
-            color: white;
-            padding: 20px 0;
-            text-align: center;
-        }
-
-        #social-links a {
-            color: white;
-            margin: 0 10px;
-            font-size: 24px;
-        }
-    </style>
+    
 </head>
 
 <body>
     <div class="header">
         <div class="logo-container">
-            <a href="https://bzvEKgr4dSkt.org" title="IEEE Blockchain Section">
+            <a href="https://blockchain.ieee.org" title="IEEE Blockchain Section">
                 <img src="ieee-blockchain_logo.png" alt="IEEE Blockchain Section" style="max-width: 100%;">
             </a>
         </div>
@@ -118,36 +44,41 @@
     </div>
 
     <!-- Home Section -->
-    <section id="home" class="tab-pane active">
-        <section id="home">
-            <div id="content" class="site-content">
-                <div class="container blockchain-box A" style="height: auto;">
-                    
-                        <div class="section" style="font-size: 30px;">
-                            <h1><strong>IEEE PUNE BLOCKCHAIN GROUP</strong></h1>
-                            <h1><i>presents</i></h1>
-                                    <h1 style="font-weight: 800;"><strong>BLOCKCHAIN SYMPOSIUM</strong></h1>
-                                    <div >
-                                    <p>Date: Friday, 2nd Feb. 2024</p>
-                                        <p>Time: 9:00 AM to 5:00 PM</p>
-                                        <p>Location: Pimpri Chinchwad College of Engineering (PCCoE)</p>
-                                        <p>Join us on to experience the joy of Blockchain</p>
-                                        <br>
-                                        <br>
-                                        <p>Immerse yourself in the valuable experience of interacting and exchanging ideas with Blockchain Domain Experts</p>
-                                        <br>
-                                        <br>
-                                    </div>
-                            </div>
-            
+    <section id="home" class="tab-pane active" style="animation: rainbow 8s linear infinite;">
+        <div id="content" class="site-content">
+            <div class="container blockchain-box A" style="height: auto; display: flex; justify-content: center; align-items: center;">
+                <div class="section" style="font-size: 30px; text-align: center;">
+                    <h1><strong>IEEE PUNE BLOCKCHAIN GROUP</strong></h1>
+                    <h1><i>presents</i></h1>
+                    <h1 style="font-weight: 800;"><strong>BLOCKCHAIN SYMPOSIUM</strong></h1>
+                    <div>
+                        <p>Date: Friday, 2nd Feb. 2024</p>
+                        <p>Time: 9:00 AM to 5:00 PM</p>
+                        <p>Location: Pimpri Chinchwad College of Engineering (PCCoE)</p>
+                        <p>Join us to experience the joy of Blockchain</p>
+                        <br>
+                        <br>
+                        <p>Immerse yourself in the valuable experience of interacting and exchanging ideas with Blockchain Domain Experts</p>
+                        <br>
+                        <br>
                     </div>
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfIOKBBcZ0ghpxyg1I3ef8QMz49qrwAhS8_6MITVKEDYhluhg/viewform?pli=1" class="register-button" target="_blank" style="border-radius: 60%;">
-                        <strong>Register Now</strong>
-                    </a>
+                </div>
             </div>
-            
-        </section>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfIOKBBcZ0ghpxyg1I3ef8QMz49qrwAhS8_6MITVKEDYhluhg/viewform?pli=1" class="register-button" target="_blank" style="border-radius: 60%;">
+                <strong>Register Now</strong>
+            </a>
+        </div>
+
+        <!-- Poster section -->
+        <div id="poster-content" class="container blockchain-box A" style="height: auto; display: flex; justify-content: center; align-items: center;">
+            <div class="section" style="font-size: 30px; text-align: center;">
+                <h1><strong>Poster </strong></h1>
+                <!-- Embed the poster PDF -->
+                <embed src="IEEE PUNE BLOCKCHAIN FORUM (2).pdf" type="application/pdf" width="70%" height="70%">
+            </div>
+        </div>
     </section>
+
 
     <!-- Organizer Section -->
     <section id="organizer" class="tab-pane">
@@ -189,6 +120,7 @@
                             </div>
                         
                 
+
             
     
             <!-- Speakers Section -->
@@ -234,21 +166,21 @@
                                     <p style="font-size: large;"><b>Dr. B. K. Murthy (Ex- Senior Director (Scientist G)),<br>(Ministry of Electronics & IT, Govt. of India)</b></p>
                                 </div>
                             </div>
-                            <!-- Industry Expert Profile Box 1 -->
+                            <!-- Industry Expert Profile Box 6 -->
                             <div class="profile-box highlighted">
                                 <img src="Nagware.jfif" alt="Director" class="circular-crop">
                                 <div class="names">
                                     <p style="font-size: large;"><b>Mr. Kamlesh Nagware, (Co-Founder FSV Capital)</b></p>
                                 </div>
                             </div>
-                            <!-- Industry Expert Profile Box 2 -->
+                            <!-- Industry Expert Profile Box 7 -->
                             <div class="profile-box highlighted">
                                 <img src="Mr. Kulkarni.jfif" alt="Mr. Shreekant Kulkarni" class="circular-crop">
                                 <div class="names">
                                     <p style="font-size: large;"><b>Mr. Shreekant Kulkarni,( CEO GreenHashes.org)</b></p>
                                 </div>
                             </div>
-                            <!-- Speaker Profile Box 6 -->
+                            
                             <!-- Speaker Profile Box 8 -->
                             <div class="profile-box highlighted">
                                 <img src="Atharva Sabnis.jpeg" alt="Mr. Atharva Sabnis" class="circular-crop">
@@ -272,7 +204,7 @@
                             </div>
                             <!-- Speaker Profile Box 11 -->
                             <div class="profile-box highlighted">
-                                <img src="priyanshu.png" alt="Mr. Priyanshu Pareek" class="circular-crop">
+                                <img src="Priyanshu_ASC_cropped.jpg" alt="Mr. Priyanshu Pareek" class="circular-crop">
                                 <div class="names">
                                     <p style="font-size: large;"><b>Mr. Priyanshu Pareek, Founder-Roko Network</b></p>
                                 </div>
@@ -299,7 +231,7 @@
     </section>
 
     <!-- Description Section -->
-    <section id="description" class="tab-pane" style="color: white;">
+    <section id="description" class="tab-pane" style="color: white;animation: rainbow 8s linear infinite ">
         <section id="agenda">
             <div class="container">
                 <div class="section">
@@ -397,7 +329,8 @@
             <a href="https://www.addthis.com/bookmark.php" target="_blank"><i class="fa fa-share-alt" aria-hidden="true"></i></a>
         </div>
     </footer>
-
+    <link rel="stylesheet" href="path/to/pdfjs/web/viewer.css">
+<script src="path/to/pdfjs/build/pdf.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
     <script>
